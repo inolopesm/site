@@ -1,5 +1,6 @@
 import React from 'react'
 import '@fontsource/poppins/300.css'
+import { Helmet } from 'react-helmet'
 import '../styles/global.css'
 import * as style from '../styles/pages/business-card.module.css'
 import logo from '../images/logo-main-black.svg'
@@ -9,6 +10,12 @@ import { brands, regular, solid } from '@fortawesome/fontawesome-svg-core/import
 export default function BusinessCard() {
   return (
     <div className={style.container}>
+      <Helmet>
+        <html lang="pt-BR" />
+        <title>inolopesm | cartão de visita</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="description" content="cartão de visita da empresa de desenvolvimento de sofware inolopesm" />
+      </Helmet>
       <div className={style.header}>
         <div className={style.box}>
           <div className={style.brand}>
